@@ -9,6 +9,6 @@ int main()
 
 void init()
 {
-	
+	// add the glut initialization code
 
 }
