@@ -3,9 +3,16 @@
 
 Cube::Cube()
 {
+
 }
 
 
 Cube::~Cube()
 {
+
+}
+
+void draw()
+{
+
 }
