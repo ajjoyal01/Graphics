@@ -12,7 +12,7 @@ Cube::~Cube()
 
 }
 
-void draw()
+void Cube::draw()
 {
 
 }

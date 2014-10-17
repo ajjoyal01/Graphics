@@ -3,9 +3,11 @@
 
 World::World()
 {
-	shape1 = new Cube();
-	shape2 = new Cube();
-	shape3 = new Cube();
+	// declare all 3 shapes as new Cubes
+	for (int i = 0; i < NUM_SHAPES; i++)
+	{
+		shape[i] = new Cube();
+	}
 }
 
 
@@ -13,7 +15,7 @@ World::~World()
 {
 }
 
-void init()
+void World::init()
 {
 	// load shader info
 	ShaderInfo shaders[] = {
@@ -27,16 +29,18 @@ void init()
 	glUseProgram(program);
 }
 
-void display()
+void World::display()
 {
 
 	// swap the buffers at the end of the display sequence
 	glutSwapBuffers();
 }
 
-void draw()
+void World::draw()
 {
-	shape1->draw();
-	shape2->draw();
-	shape3->draw();
+	// draw all three shapes
+	for (int i = 0; i < NUM_SHAPES; i++)
+	{
+		shape[i]->draw();
+	}
 }

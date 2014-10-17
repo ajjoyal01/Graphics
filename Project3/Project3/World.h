@@ -10,6 +10,8 @@
 #include "Shape.h"
 #include "Cube.h"
 
+#define NUM_SHAPES 3
+
 class World
 {
 
@@ -23,9 +25,7 @@ public:
 
 private:
 	
-	Shape* shape1;		// pointers to three generic shapes
-	Shape* shape2;
-	Shape* shape3;
-	Shape* currentShape;	// pointer to the current shape we are working with
+	Shape* shape[NUM_SHAPES];	//pointer array to shapes. 
+								//more efficient to pass pointers around than whole arrays of data
 };
 

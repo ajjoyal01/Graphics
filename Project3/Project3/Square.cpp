@@ -12,7 +12,7 @@ Square::~Square()
 
 }
 
-void draw()
+void Square::draw()
 {
 
 }

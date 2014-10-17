@@ -13,7 +13,7 @@ public:
 
 	Shape();
 	~Shape();
-	virtual void draw() = 0;	// function to be overwritten in sub-classes
+	void virtual draw() = 0;	// function to be overwritten in sub-classes
 
 private:
 
