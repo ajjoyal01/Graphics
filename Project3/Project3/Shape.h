@@ -6,14 +6,16 @@
 #include <iostream>
 #include <cstdlib>
 
-class Shape
+#include "Object.h"
+
+class Shape : class Object
 {
 
 public:
 
 	Shape();
 	~Shape();
-	void virtual draw() = 0;	// function to be overwritten in sub-classes
+	
 
 private:
 
