@@ -1,5 +1,18 @@
 #include "World.h"
 
+//----------------------------------------------------------
+// Global variables
+//----------------------------------------------------------
+GLfloat axesPosition[NUM_AXES][2][4] = {
+		{ { -1.0, 0.0, 0.0, 1.0 }, { 1.0, 0.0, 0.0, 1.0 } },	
+		{ { 0.0, -1.0, 0.0, 1.0 }, { 0.0, 1.0, 0.0, 1.0 } },
+		{ { 0.0, 0.0, -1.0, 1.0 }, { 0.0, 0.0, 1.0, 1.0 } }
+};
+GLfloat axesColor[NUM_AXES][2][4];
+
+GLfloat cubesPosition[NUM_SHAPES][NUM_FACES][4];
+GLfloat cubesColor[NUM_SHAPES][NUM_FACES][4];
+//----------------------------------------------------------
 
 World::World()
 {
@@ -8,8 +21,11 @@ World::World()
 	{
 		shape[i] = new Cube();
 	}
-}
 
+	// call to store values of all objects
+	initValues();
+
+}
 
 World::~World()
 {
@@ -43,4 +59,11 @@ void World::draw()
 	{
 		shape[i]->draw();
 	}
+}
+
+void World::initValues()
+{
+	axesPosition 
+
+
 }
