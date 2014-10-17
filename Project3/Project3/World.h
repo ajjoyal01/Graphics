@@ -6,7 +6,9 @@
 #include <iostream>
 #include <cstdlib>
 
+#include "LoadShaders.h"
 #include "Shape.h"
+#include "Cube.h"
 
 class World
 {

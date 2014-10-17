@@ -6,8 +6,10 @@
 #include <iostream>
 #include <cstdlib>
 
-
 #include "Shape.h"
+#include "Square.h"
+
+#define NUM_FACES 6
 
 class Cube : public Shape
 {
@@ -20,6 +22,6 @@ public:
 
 private:
 
-
+	Square* faces[NUM_FACES];	// pointers to faces (Squares)
 };
 

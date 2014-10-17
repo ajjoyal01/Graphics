@@ -3,9 +3,11 @@
 
 Shape::Shape()
 {
+
 }
 
 
 Shape::~Shape()
 {
+
 }
