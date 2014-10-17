@@ -8,11 +8,13 @@
 
 #include "Object.h"
 
+#define NUM_VERTICES 6
+#define DIMENTIONS 4
 class Axes : public Object
 {
 
 public:
-	Axes();
+	Axes(GLfloat[NUM_VERTICES][DIMENTIONS], GLfloat[NUM_VERTICES][DIMENTIONS]);
 	~Axes();
 	void draw();
 
