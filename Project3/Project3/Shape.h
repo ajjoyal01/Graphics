@@ -8,7 +8,7 @@
 
 #include "Object.h"
 
-class Shape : class Object
+class Shape : public Object
 {
 
 public:

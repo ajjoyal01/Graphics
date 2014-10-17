@@ -8,7 +8,7 @@
 
 #include "Object.h"
 
-class Axes : class Object
+class Axes : public Object
 {
 
 public:
