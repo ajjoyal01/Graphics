@@ -48,7 +48,7 @@ int main(int argc,char* argv[])
 
 	// set up the display and keyboard functions
 	glutDisplayFunc(world.display);
-	glutKeyboardFunc(world.keyPress);
+	//glutKeyboardFunc(world.keyPress);
 
 	//glut main loop
 	glutMainLoop();

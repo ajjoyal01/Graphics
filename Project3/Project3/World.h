@@ -31,5 +31,6 @@ private:
 	
 	Shape* shape[NUM_SHAPES];	//pointer array to shapes. 
 								//more efficient to pass pointers around than whole arrays of data
+	Axes axes;		// the three axes, drawn for reference
 };
 
