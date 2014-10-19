@@ -11,12 +11,14 @@
 
 #define NUM_FACES 6
 
+using namespace std;
+
 class Cube : public Shape
 {
 
 public:
 
-	Cube();
+	Cube(float,GLfloat[4]);
 	~Cube();
 	void draw();
 

@@ -52,7 +52,6 @@ int main(int argc,char* argv[])
 
 	// initialize the world
 	world.init();
-	world.initValues();
 
 	// set up the display and keyboard functions
 	glutDisplayFunc(display);
