@@ -1,13 +1,17 @@
-﻿Build started 10/17/2014 11:36:37 PM.
+﻿Build started 10/19/2014 5:58:38 PM.
      1>Project "D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Project3\Project3.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
-         main.cpp
-     1>d:\users\andrew\documents\github\graphics\project3\project3\axes.h(13): warning C4005: 'NUM_VERTICES' : macro redefinition
-                 d:\users\andrew\documents\github\graphics\project3\project3\square.h(11) : see previous definition of 'NUM_VERTICES'
-     1>d:\users\andrew\documents\github\graphics\project3\project3\main.cpp(50): error C3867: 'World::display': function call missing argument list; use '&World::display' to create a pointer to member
-     1>Done Building Project "D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Project3\Project3.vcxproj" (Build target(s)) -- FAILED.
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Debug\Project3.exe" /INCREMENTAL /NOLOGO freeglut.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Debug\Project3.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Debug\Project3.lib" /MACHINE:X86 Debug\Axes.obj
+         Debug\Cube.obj
+         Debug\LoadShaders.obj
+         Debug\main.obj
+         Debug\Object.obj
+         Debug\Shape.obj
+         Debug\Square.obj
+         Debug\World.obj
+         Project3.vcxproj -> D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Debug\Project3.exe
+     1>Done Building Project "D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Project3\Project3.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.62
+Time Elapsed 00:00:00.12

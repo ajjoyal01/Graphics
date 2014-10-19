@@ -35,7 +35,7 @@ void World::init()
 
 void World::display()
 {
-	axes.draw();
+	
 
 	// swap the buffers at the end of the display sequence
 	glutSwapBuffers();
@@ -48,6 +48,8 @@ void World::draw()
 	{
 		shape[i]->draw();
 	}
+
+	axes->draw();
 }
 
 void World::initValues()
@@ -118,5 +120,5 @@ void World::initValues()
 	GLfloat cubesColor[NUM_SHAPES][NUM_FACES][4];
 	//----------------------------------------------------------
 
-	axes = Axes(axesPosition, axesColor);
+	axes = new Axes(axesPosition, axesColor);
 }

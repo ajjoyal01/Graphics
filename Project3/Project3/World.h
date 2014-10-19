@@ -22,7 +22,7 @@ public:
 	World();
 	~World();
 	void init();		// initializes World
-	void display();		// display function
+	static void display();		// display function
 	void draw();		// draw function for entire World
 	void initValues();	// initializes values for all objects
 						// all values stored in this function, making it easy to change the values
@@ -31,6 +31,6 @@ private:
 	
 	Shape* shape[NUM_SHAPES];	//pointer array to shapes. 
 								//more efficient to pass pointers around than whole arrays of data
-	Axes axes;		// the three axes, drawn for reference
+	Axes* axes;		// the three axes, drawn for reference
 };
 
