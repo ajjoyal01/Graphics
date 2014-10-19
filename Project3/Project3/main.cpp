@@ -23,6 +23,11 @@ using std::cout;
 
 World world;
 
+void display()
+{
+	world.display();
+}
+
 int main(int argc,char* argv[])
 {
 	// setup display/version information
@@ -43,11 +48,14 @@ int main(int argc,char* argv[])
 		fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
 	}
 
+	
+
 	// initialize the world
 	world.init();
+	world.initValues();
 
 	// set up the display and keyboard functions
-	glutDisplayFunc(world.display);
+	glutDisplayFunc(display);
 	//glutKeyboardFunc(world.keyPress);
 
 	//glut main loop

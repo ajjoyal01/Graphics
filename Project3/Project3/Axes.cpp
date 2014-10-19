@@ -20,7 +20,7 @@ Axes::Axes(GLfloat inPosition[NUM_AXES][NUM_VERTICES][DIMENTIONS], GLfloat inCol
 	}
 
 	// create Vertex Array
-	glGenVertexArrays(NUM_AXES_VAOS, VAOs);
+	glGenVertexArrays(NUM_AXES_VAOS,VAOs);
 	glBindVertexArray(VAOs[AXES_VERTS]);
 
 	// create Buffer

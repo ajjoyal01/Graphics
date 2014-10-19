@@ -4,14 +4,6 @@
 
 World::World()
 {
-	// declare all 3 shapes as new Cubes
-	for (int i = 0; i < NUM_SHAPES; i++)
-	{
-		shape[i] = new Cube();
-	}
-
-	// call to store values of all objects
-	initValues();
 
 }
 
@@ -23,8 +15,8 @@ void World::init()
 {
 	// load shader info
 	ShaderInfo shaders[] = {
-			{ GL_VERTEX_SHADER, "project2.vert" },
-			{ GL_FRAGMENT_SHADER, "project2.frag" },
+			{ GL_VERTEX_SHADER, "project3.vert" },
+			{ GL_FRAGMENT_SHADER, "project3.frag" },
 			{ GL_NONE, NULL },
 	};
 
@@ -35,7 +27,7 @@ void World::init()
 
 void World::display()
 {
-	
+	draw();
 
 	// swap the buffers at the end of the display sequence
 	glutSwapBuffers();
@@ -119,6 +111,12 @@ void World::initValues()
 
 	GLfloat cubesColor[NUM_SHAPES][NUM_FACES][4];
 	//----------------------------------------------------------
+
+	// declare all 3 shapes as new Cubes
+	for (int i = 0; i < NUM_SHAPES; i++)
+	{
+		shape[i] = new Cube();
+	}
 
 	axes = new Axes(axesPosition, axesColor);
 }

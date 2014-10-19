@@ -14,7 +14,7 @@
 #define NUM_SHAPES 3
 #define NUM_AXES 3
 
-class World
+static class World
 {
 
 public:
@@ -22,7 +22,7 @@ public:
 	World();
 	~World();
 	void init();		// initializes World
-	static void display();		// display function
+	void display();		// display function
 	void draw();		// draw function for entire World
 	void initValues();	// initializes values for all objects
 						// all values stored in this function, making it easy to change the values
