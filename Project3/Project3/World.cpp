@@ -42,6 +42,67 @@ void World::display()
 	glutSwapBuffers();
 }
 
+void World::keyPress(unsigned char key,int x,int y)
+{
+	/*
+	switch (key)
+	{
+	case 'b':
+		shape[curShape]->scale(1.25);
+		break;
+	case 'n':
+		shape[curShape]->scale(0.8);
+		break;
+	case 'c':
+		// rotate clockwise along axis of view
+		break;
+	case 'v':
+		// rotate counterclockwise 
+		break;
+	case 'w':
+		// translate up
+		break;
+	case 'a':
+		// translate left
+		break;
+	case 's':
+		// translate down
+		break;
+	case 'd':
+		// translate right
+		break;
+
+
+	case 't':
+		// random textures on 3 shapes
+		break;
+	case 'r':
+		// reverse textures
+		break;
+
+	}
+	*/
+}
+
+void World::arrowInput(int key, int x, int y)
+{
+	switch (key)
+	{
+	case GLUT_KEY_UP:
+		//move camera up, look at center of scene
+		break;
+	case GLUT_KEY_DOWN:
+		//move camera down, look at center of scene
+		break;
+	case GLUT_KEY_LEFT:
+		//move camera left, look at center of scene
+		break;
+	case GLUT_KEY_RIGHT:
+		//move camera right, look at center of scene
+		break;
+	}
+}
+
 void World::draw()
 {
 	/*
@@ -73,9 +134,8 @@ void World::initValues()
 	};
 	//----------------------------------------------------------
 	
-	
-
-	Color cubesColor = { 1.0, 0.0, 1.0, 1.0 };
+	// cube color
+	Color cubesColor = { 1.0, 1.0, 0.0, 1.0 };
 
 	/*
 	// declare all 3 shapes as new Cubes

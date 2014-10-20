@@ -28,6 +28,16 @@ void display()
 	world.display();
 }
 
+void keyPress(unsigned char key,int x,int y)
+{
+	world.keyPress(key,x,y);
+}
+
+void specialFunc(int key, int x, int y)
+{
+	world.arrowInput(key, x, y);
+}
+
 int main(int argc,char* argv[])
 {
 	// setup display/version information
@@ -55,7 +65,8 @@ int main(int argc,char* argv[])
 
 	// set up the display and keyboard functions
 	glutDisplayFunc(display);
-	//glutKeyboardFunc(world.keyPress);
+	glutKeyboardFunc(keyPress);
+	glutSpecialFunc(specialFunc);
 
 	//glut main loop
 	glutMainLoop();

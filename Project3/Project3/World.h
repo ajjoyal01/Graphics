@@ -24,6 +24,8 @@ public:
 	~World();
 	void init();		// initializes World
 	void display();		// display function
+	void keyPress(unsigned char, int, int);
+	void arrowInput(int, int, int);
 	void draw();		// draw function for entire World
 	void initValues();	// initializes values for all objects
 						// all values stored in this function, making it easy to change the values
@@ -33,5 +35,7 @@ private:
 	Cube* shape[NUM_SHAPES];	//pointer to array of shapes. 
 								//more efficient to pass pointers around than whole arrays of data
 	Axes* axes;		// the three axes, drawn for reference
+
+	int curShape = 0;	// keeps track of highlighted shape
 };
 
