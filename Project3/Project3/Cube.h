@@ -8,6 +8,8 @@
 
 #include "Shape.h"
 #include "Square.h"
+#include "Color.h"
+#include "vec.h"
 
 #define NUM_FACES 6
 
@@ -20,7 +22,7 @@ public:
 	Cube();
 	~Cube();
 	void draw();
-	void init(float,GLfloat[4]);
+	void init(float,Color);
 
 private:
 

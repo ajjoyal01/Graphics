@@ -75,7 +75,7 @@ void World::initValues()
 	
 	
 
-	GLfloat cubesColor[4] = { 1.0, 0.0, 1.0, 1.0 };
+	Color cubesColor = { 1.0, 0.0, 1.0, 1.0 };
 
 	/*
 	// declare all 3 shapes as new Cubes

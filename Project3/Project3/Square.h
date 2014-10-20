@@ -9,6 +9,8 @@
 #include "vgl.h"
 #include "Object.h"
 #include "Texture.h"
+#include "Color.h"
+#include "vec.h"
 
 #define NUM_VERTICES 4
 #define DIMENTIONS 4
@@ -30,14 +32,14 @@ public:
 	~Square();
 	void draw();
 	void update();
-	void init(GLfloat[4]);
+	void init(Color);
 	void addTexture(Texture texture);
 
 //private:
 
-	GLfloat position[NUM_VERTICES][DIMENTIONS];		// array to store vertex positions 4d
-	GLfloat texCoords[NUM_VERTICES][DIMENTIONS];	// stores texture coords for each vertex
-	GLfloat color[NUM_VERTICES][DIMENTIONS];		// stores color coords for each vertex
+	vec3 position[NUM_VERTICES];		// array to store vertex positions 4d
+	vec2 texCoords[NUM_VERTICES];	// stores texture coords for each vertex
+	Color color[NUM_VERTICES];		// stores color coords for each vertex
 
 	//---------------------------------------------------------
 	// Vertex Arrays and Buffers

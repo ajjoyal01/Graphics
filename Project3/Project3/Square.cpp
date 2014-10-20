@@ -32,15 +32,15 @@ void Square::draw()
 	glDrawArrays(GL_TRIANGLE_FAN, 0, NUM_VERTICES);
 }
 
-void Square::init(GLfloat inColor[])
+void Square::init(Color inColor)
 {
 	// populate colors
 	for (int i = 0; i < NUM_VERTICES; i++)
 	{
-		for (int j = 0; j < 4; j++)
-		{
-			color[i][j] = inColor[j];
-		}
+		color[i].red = inColor.red;
+		color[i].green = inColor.green;
+		color[i].blue = inColor.blue;
+		color[i].alpha = inColor.alpha;
 	}
 
 	// create Vertex Array
@@ -53,6 +53,6 @@ void Square::init(GLfloat inColor[])
 	glBufferData(GL_ARRAY_BUFFER, sizeof(position) + sizeof(color), NULL, GL_DYNAMIC_DRAW);
 
 	// set attrib pointer
-	glVertexAttribPointer(vPosition, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0));
+	glVertexAttribPointer(vPosition, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0));
 	glVertexAttribPointer(vColor, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(sizeof(position)));
 }
