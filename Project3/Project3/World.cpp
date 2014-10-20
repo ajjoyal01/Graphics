@@ -2,7 +2,12 @@
 
 World::World()
 {
+	for (int i = 0; i < NUM_SHAPES; i++)
+	{
+		shape[i] = new Cube();
+	}
 
+	axes = new Axes();
 }
 
 World::~World()
@@ -45,7 +50,7 @@ void World::draw()
 	}*/
 
 	axes->draw();
-	//shape[0]->draw();
+	shape[0]->draw();
 }
 
 void World::initValues()
@@ -77,6 +82,6 @@ void World::initValues()
 		shape[i] = new Cube(0.2);
 	}*/
 
-	shape[0] = new Cube(0.2,cubesColor);
-	axes = new Axes(axesPosition, axesColor);
+	shape[0]->init(0.2,cubesColor);
+	axes->init(axesPosition, axesColor);
 }

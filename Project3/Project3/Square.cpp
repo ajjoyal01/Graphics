@@ -20,6 +20,10 @@ Square::Square(GLfloat inColor[])
 	glGenBuffers(NUM_SQUARE_BUFFERS, Buffers);
 	glBindBuffer(GL_ARRAY_BUFFER, Buffers[SQUARE_BUFFER]);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(position) + sizeof(color), NULL, GL_DYNAMIC_DRAW);	
+
+	// set attrib pointer
+	glVertexAttribPointer(vPosition, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0));
+	glVertexAttribPointer(vColor, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(sizeof(position)));
 }
 
 
@@ -34,9 +38,7 @@ void Square::update()
 	glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(position), position);
 	glBufferSubData(GL_ARRAY_BUFFER, sizeof(position), sizeof(color), color);
 
-	// set attrib pointer
-	glVertexAttribPointer(vPosition, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0));
-	glVertexAttribPointer(vColor, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(sizeof(position)));
+
 }
 
 void Square::draw()

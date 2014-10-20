@@ -7,6 +7,7 @@
 #include <cstdlib>
 
 #include "LoadShaders.h"
+#include "vgl.h"
 #include "Cube.h"
 #include "Axes.h"
 

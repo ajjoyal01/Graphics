@@ -30,6 +30,7 @@ public:
 	Axes(GLfloat[NUM_AXES][NUM_VERTICES][DIMENTIONS], GLfloat[NUM_AXES][NUM_VERTICES][DIMENTIONS]);
 	~Axes();
 	void draw();
+	void init(GLfloat[NUM_AXES][NUM_VERTICES][DIMENTIONS], GLfloat[NUM_AXES][NUM_VERTICES][DIMENTIONS]);
 
 private:
 
