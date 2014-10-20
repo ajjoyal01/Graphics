@@ -13,7 +13,7 @@
 
 using namespace std;
 
-class Cube : public Shape
+class Cube : public Object
 {
 
 public:

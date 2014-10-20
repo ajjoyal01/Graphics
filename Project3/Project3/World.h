@@ -7,7 +7,6 @@
 #include <cstdlib>
 
 #include "LoadShaders.h"
-#include "Shape.h"
 #include "Cube.h"
 #include "Axes.h"
 
@@ -30,7 +29,7 @@ public:
 
 private:
 	
-	Shape* shape[NUM_SHAPES];	//pointer array to shapes. 
+	Cube* shape[NUM_SHAPES];	//pointer array to shapes. 
 								//more efficient to pass pointers around than whole arrays of data
 	Axes* axes;		// the three axes, drawn for reference
 };

@@ -22,7 +22,7 @@ enum { SQUARE_BUFFER, NUM_SQUARE_BUFFERS };
 
 using namespace std;
 
-class Square : public Shape
+class Square : public Object
 {
 
 public:
