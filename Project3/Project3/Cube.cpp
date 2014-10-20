@@ -3,8 +3,6 @@
 
 Cube::Cube(float sideLength, GLfloat inColor[])
 {
-	cout << "New Cube\n" << endl;
-
 	for (int i = 0; i < NUM_FACES; i++)
 	{
 		faces[i] = new Square(inColor);
@@ -14,6 +12,7 @@ Cube::Cube(float sideLength, GLfloat inColor[])
 	float pos = sideLength / 2;
 	float neg = pos * -1;
 
+	// the following takes the input value and generates a cube centered at the origin
 	// face 1:
 	faces[0]->position[0][0] = neg;
 	faces[0]->position[0][1] = pos;

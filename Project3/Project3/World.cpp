@@ -1,7 +1,5 @@
 #include "World.h"
 
-
-
 World::World()
 {
 
@@ -29,6 +27,8 @@ void World::init()
 
 void World::display()
 {
+	glClear(GL_COLOR_BUFFER_BIT);
+
 	draw();
 
 	// swap the buffers at the end of the display sequence
@@ -45,7 +45,7 @@ void World::draw()
 	}*/
 
 	axes->draw();
-	shape[0]->draw();
+	//shape[0]->draw();
 }
 
 void World::initValues()

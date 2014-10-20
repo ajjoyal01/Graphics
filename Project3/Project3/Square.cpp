@@ -3,8 +3,6 @@
 
 Square::Square(GLfloat inColor[])
 {
-	cout << "New Square\n" << endl;
-
 	// populate colors
 	for (int i = 0; i < NUM_VERTICES; i++)
 	{
@@ -21,9 +19,7 @@ Square::Square(GLfloat inColor[])
 	// create Buffer
 	glGenBuffers(NUM_SQUARE_BUFFERS, Buffers);
 	glBindBuffer(GL_ARRAY_BUFFER, Buffers[SQUARE_BUFFER]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(position) + sizeof(color), NULL, GL_DYNAMIC_DRAW);
-
-	
+	glBufferData(GL_ARRAY_BUFFER, sizeof(position) + sizeof(color), NULL, GL_DYNAMIC_DRAW);	
 }
 
 
@@ -45,7 +41,6 @@ void Square::update()
 
 void Square::draw()
 {
-	cout << "Draw Square\n" << endl;
 	glBindVertexArray(VAOs[SQUARE_VERTS]);
 	glBindBuffer(GL_ARRAY_BUFFER, Buffers[SQUARE_BUFFER]);
 
@@ -53,5 +48,5 @@ void Square::draw()
 	glEnableVertexAttribArray(vPosition);
 	glEnableVertexAttribArray(vColor);
 
-	//glDrawArrays(GL_TRIANGLE_FAN, 0, NUM_VERTICES);
+	glDrawArrays(GL_LINE_LOOP, 0, NUM_VERTICES);
 }

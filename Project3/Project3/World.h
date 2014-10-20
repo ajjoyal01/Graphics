@@ -29,7 +29,7 @@ public:
 
 private:
 	
-	Cube* shape[NUM_SHAPES];	//pointer array to shapes. 
+	Cube* shape[NUM_SHAPES];	//pointer to array of shapes. 
 								//more efficient to pass pointers around than whole arrays of data
 	Axes* axes;		// the three axes, drawn for reference
 };
