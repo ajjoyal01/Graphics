@@ -13,7 +13,7 @@
 
 #define NUM_SHAPES 3
 #define NUM_AXES 3
-
+#define NUM_TEXTURES 10
 
 static class World
 {
@@ -29,6 +29,7 @@ public:
 	void draw();		// draw function for entire World
 	void initValues();	// initializes values for all objects
 						// all values stored in this function, making it easy to change the values
+	void setupTextures();
 
 private:
 	
@@ -37,5 +38,7 @@ private:
 	Axes* axes;		// the three axes, drawn for reference
 
 	int curShape = 0;	// keeps track of highlighted shape
+
+	GLuint Textures[NUM_TEXTURES];
 };
 

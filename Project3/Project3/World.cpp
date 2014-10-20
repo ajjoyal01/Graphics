@@ -8,6 +8,9 @@ World::World()
 	}
 
 	axes = new Axes();
+
+	setupTextures();
+	
 }
 
 World::~World()
@@ -146,4 +149,10 @@ void World::initValues()
 
 	shape[0]->init(0.2,cubesColor);
 	axes->init(axesPosition, axesColor);
+}
+
+void World::setupTextures()
+{
+	// generate textures
+	glGenTextures(NUM_TEXTURES, Textures);
 }
