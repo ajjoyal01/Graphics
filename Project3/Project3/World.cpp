@@ -16,6 +16,8 @@ World::~World()
 
 void World::init()
 {
+	initValues();
+
 	// load shader info
 	ShaderInfo shaders[] = {
 			{ GL_VERTEX_SHADER, "project3.vert" },
@@ -27,7 +29,7 @@ void World::init()
 	GLuint program = LoadShaders(shaders);
 	glUseProgram(program);
 
-	initValues();
+	
 }
 
 void World::display()

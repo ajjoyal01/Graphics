@@ -1,7 +1,38 @@
 #include "Square.h"
 
+Square::Square()
+{
 
-Square::Square(GLfloat inColor[])
+}
+
+
+
+Square::~Square()
+{
+
+}
+
+void Square::update()
+{
+	glBindBuffer(GL_ARRAY_BUFFER, Buffers[SQUARE_BUFFER]);
+	glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(position), position);
+	glBufferSubData(GL_ARRAY_BUFFER, sizeof(position), sizeof(color), color);
+}
+
+void Square::draw()
+{
+	
+	glBindVertexArray(VAOs[SQUARE_VERTS]);
+	glBindBuffer(GL_ARRAY_BUFFER, Buffers[SQUARE_BUFFER]);
+
+	// enable vertex array attributes
+	glEnableVertexAttribArray(vPosition);
+	glEnableVertexAttribArray(vColor);
+
+	glDrawArrays(GL_TRIANGLE_FAN, 0, NUM_VERTICES);
+}
+
+void Square::init(GLfloat inColor[])
 {
 	// populate colors
 	for (int i = 0; i < NUM_VERTICES; i++)
@@ -19,36 +50,9 @@ Square::Square(GLfloat inColor[])
 	// create Buffer
 	glGenBuffers(NUM_SQUARE_BUFFERS, Buffers);
 	glBindBuffer(GL_ARRAY_BUFFER, Buffers[SQUARE_BUFFER]);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(position) + sizeof(color), NULL, GL_DYNAMIC_DRAW);	
+	glBufferData(GL_ARRAY_BUFFER, sizeof(position) + sizeof(color), NULL, GL_DYNAMIC_DRAW);
 
 	// set attrib pointer
 	glVertexAttribPointer(vPosition, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0));
 	glVertexAttribPointer(vColor, 4, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(sizeof(position)));
-}
-
-
-Square::~Square()
-{
-
-}
-
-void Square::update()
-{
-	glBindBuffer(GL_ARRAY_BUFFER, Buffers[SQUARE_BUFFER]);
-	glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(position), position);
-	glBufferSubData(GL_ARRAY_BUFFER, sizeof(position), sizeof(color), color);
-
-
-}
-
-void Square::draw()
-{
-	glBindVertexArray(VAOs[SQUARE_VERTS]);
-	glBindBuffer(GL_ARRAY_BUFFER, Buffers[SQUARE_BUFFER]);
-
-	// enable vertex array attributes
-	glEnableVertexAttribArray(vPosition);
-	glEnableVertexAttribArray(vColor);
-
-	glDrawArrays(GL_LINE_LOOP, 0, NUM_VERTICES);
 }

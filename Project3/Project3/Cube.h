@@ -18,7 +18,6 @@ class Cube : public Object
 
 public:
 	Cube();
-	Cube(float,GLfloat[4]);
 	~Cube();
 	void draw();
 	void init(float,GLfloat[4]);

@@ -7,7 +7,7 @@
 #include <cstdlib>
 
 #include "vgl.h"
-#include "Shape.h"
+#include "Object.h"
 #include "Texture.h"
 
 #define NUM_VERTICES 4
@@ -26,10 +26,11 @@ class Square : public Object
 {
 
 public:
-	Square(GLfloat[4]);
+	Square();
 	~Square();
 	void draw();
 	void update();
+	void init(GLfloat[4]);
 	void addTexture(Texture texture);
 
 //private:
