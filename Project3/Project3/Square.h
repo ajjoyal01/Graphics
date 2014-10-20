@@ -8,6 +8,7 @@
 
 #include "vgl.h"
 #include "Shape.h"
+#include "Texture.h"
 
 #define NUM_VERTICES 4
 #define DIMENTIONS 4
@@ -29,6 +30,7 @@ public:
 	~Square();
 	void draw();
 	void update();
+	void addTexture(Texture texture);
 
 //private:
 
