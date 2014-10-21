@@ -24,9 +24,12 @@ public:
 	void draw();
 	void update();
 	void init(Color);
-	void addTexture(Texture texture);
+	void setTexture(Texture);
 
 //private:
+
+	Texture _texture;
+
 
 	vec3 position[NUM_VERTICES];		// array to store vertex positions 4d
 	vec2 texCoords[NUM_VERTICES];	// stores texture coords for each vertex
@@ -44,5 +47,8 @@ public:
 	//---------------------------------------------------------
 	enum { vPosition, vColor, vTexCoord };
 	//---------------------------------------------------------
+
+
+	
 };
 

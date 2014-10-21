@@ -28,6 +28,8 @@ void Square::update()
 
 void Square::draw()
 {
+	// bind the texture uniform here
+
 	
 	glBindVertexArray(vaoId);
 	glBindBuffer(GL_ARRAY_BUFFER, vboId);
@@ -66,4 +68,11 @@ void Square::init(Color inColor)
 	glVertexAttribPointer(vPosition, 3, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(0));
 	glVertexAttribPointer(vColor, 4, GL_UNSIGNED_BYTE, GL_TRUE, 0, BUFFER_OFFSET(sizeof(position)));
 	glVertexAttribPointer(vTexCoord, 2, GL_FLOAT, GL_FALSE, 0, BUFFER_OFFSET(sizeof(position) + sizeof(color)));
+}
+
+
+void Square::setTexture(Texture texture)
+{
+	_texture = texture;
+
 }
