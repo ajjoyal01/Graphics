@@ -4,7 +4,6 @@
 #include <GL/GL.h>
 #include <GL/freeglut.h>
 #include <iostream>
-#include <cstdlib>
 
 #include "vgl.h"
 #include "Object.h"
@@ -13,14 +12,6 @@
 #include "vec.h"
 
 #define NUM_VERTICES 4
-#define DIMENTIONS 4
-
-//---------------------------------------------------------
-// Vertex Array and Buffer
-//---------------------------------------------------------
-enum { SQUARE_VERTS, NUM_SQUARE_VAOS };
-enum { SQUARE_BUFFER, NUM_SQUARE_BUFFERS };
-//---------------------------------------------------------
 
 using namespace std;
 
@@ -44,14 +35,14 @@ public:
 	//---------------------------------------------------------
 	// Vertex Arrays and Buffers
 	//---------------------------------------------------------
-	GLuint VAOs[NUM_SQUARE_VAOS];
-	GLuint Buffers[NUM_SQUARE_BUFFERS];
+	GLuint vaoId;
+	GLuint vboId;
 	//---------------------------------------------------------
 
 	//---------------------------------------------------------
 	// Vertex Attributes
 	//---------------------------------------------------------
-	enum { vPosition, vColor };
+	enum { vPosition, vColor, vTexCoord };
 	//---------------------------------------------------------
 };
 
