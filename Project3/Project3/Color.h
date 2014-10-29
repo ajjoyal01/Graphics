@@ -1,6 +1,16 @@
+/*
+	Color.h
+	Author: Gregory Venezia, and Andrew Royal
+	Date: 10/24/2014
+	Course: CSC5210
+	Description: Color struct
+*/
 #pragma once
 
 struct Color
 {
-	char red, green, blue, alpha;
+	float red, green, blue, alpha;
 };
+
+
+

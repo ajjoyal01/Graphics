@@ -1,31 +1,73 @@
-﻿Build started 10/20/2014 2:46:25 PM.
-     1>Project "D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Project3\Project3.vcxproj" on node 2 (Build target(s)).
+﻿Build started 10/28/2014 11:28:09 PM.
+     1>Project "C:\Users\Gregory Venezia\Downloads\Project3\Project3\Project3.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt World.cpp main.cpp
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Axes.cpp Camera.cpp Cube.cpp DirectionalLight.cpp LoadShaders.cpp lodepng.cpp main.cpp Object.cpp Shader.cpp Square.cpp Texture.cpp TextureCache.cpp World.cpp
          World.cpp
-     1>d:\users\andrew\documents\github\graphics\project3\project3\axes.h(13): warning C4005: 'NUM_VERTICES' : macro redefinition
-                 d:\users\andrew\documents\github\graphics\project3\project3\square.h(15) : see previous definition of 'NUM_VERTICES'
-     1>d:\users\andrew\documents\github\graphics\project3\project3\world.h(43): warning C4091: 'static ' : ignored on left of 'World' when no variable is declared
-     1>d:\users\andrew\documents\github\graphics\project3\project3\world.cpp(150): warning C4305: 'argument' : truncation from 'double' to 'float'
-         Generating Code...
-         Compiling...
+     1>c:\users\gregory venezia\downloads\project3\project3\axes.h(23): warning C4005: 'NUM_VERTICES' : macro redefinition
+                 c:\users\gregory venezia\downloads\project3\project3\square.h(16) : see previous definition of 'NUM_VERTICES'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.h(74): warning C4091: 'static ' : ignored on left of 'World' when no variable is declared
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(14): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(82): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(97): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(102): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(107): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(112): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(117): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(122): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(155): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(159): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(163): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(167): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(195): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(197): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(199): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(200): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(223): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(228): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(236): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.cpp(237): warning C4305: 'argument' : truncation from 'double' to 'float'
+         TextureCache.cpp
+         Texture.cpp
+         Square.cpp
+         Shader.cpp
+         Object.cpp
          main.cpp
-     1>d:\users\andrew\documents\github\graphics\project3\project3\axes.h(13): warning C4005: 'NUM_VERTICES' : macro redefinition
-                 d:\users\andrew\documents\github\graphics\project3\project3\square.h(15) : see previous definition of 'NUM_VERTICES'
-     1>d:\users\andrew\documents\github\graphics\project3\project3\world.h(43): warning C4091: 'static ' : ignored on left of 'World' when no variable is declared
+     1>c:\users\gregory venezia\downloads\project3\project3\axes.h(23): warning C4005: 'NUM_VERTICES' : macro redefinition
+                 c:\users\gregory venezia\downloads\project3\project3\square.h(16) : see previous definition of 'NUM_VERTICES'
+     1>c:\users\gregory venezia\downloads\project3\project3\world.h(74): warning C4091: 'static ' : ignored on left of 'World' when no variable is declared
+         lodepng.cpp
+         LoadShaders.cpp
+         DirectionalLight.cpp
+         Cube.cpp
+     1>c:\users\gregory venezia\downloads\project3\project3\cube.cpp(136): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>c:\users\gregory venezia\downloads\project3\project3\cube.cpp(137): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>c:\users\gregory venezia\downloads\project3\project3\cube.cpp(138): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+     1>c:\users\gregory venezia\downloads\project3\project3\cube.cpp(139): warning C4244: 'argument' : conversion from 'int' to 'GLfloat', possible loss of data
+         Camera.cpp
+     1>c:\users\gregory venezia\downloads\project3\project3\axes.h(23): warning C4005: 'NUM_VERTICES' : macro redefinition
+                 c:\users\gregory venezia\downloads\project3\project3\square.h(16) : see previous definition of 'NUM_VERTICES'
+     1>c:\users\gregory venezia\downloads\project3\project3\camera.cpp(40): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\camera.cpp(41): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\users\gregory venezia\downloads\project3\project3\camera.cpp(51): warning C4305: 'argument' : truncation from 'double' to 'float'
+         Axes.cpp
          Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Debug\Project3.exe" /INCREMENTAL /NOLOGO freeglut.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Debug\Project3.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Debug\Project3.lib" /MACHINE:X86 Debug\Axes.obj
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Gregory Venezia\Downloads\Project3\Debug\Project3.exe" /INCREMENTAL /NOLOGO freeglut.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Gregory Venezia\Downloads\Project3\Debug\Project3.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Gregory Venezia\Downloads\Project3\Debug\Project3.lib" /MACHINE:X86 Debug\Axes.obj
+         Debug\Camera.obj
          Debug\Cube.obj
+         Debug\DirectionalLight.obj
          Debug\LoadShaders.obj
+         Debug\lodepng.obj
          Debug\main.obj
          Debug\Object.obj
+         Debug\Shader.obj
          Debug\Square.obj
          Debug\Texture.obj
+         Debug\TextureCache.obj
          Debug\World.obj
-         Project3.vcxproj -> D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Debug\Project3.exe
-     1>Done Building Project "D:\Users\Andrew\Documents\GitHub\Graphics\Project3\Project3\Project3.vcxproj" (Build target(s)).
+         Project3.vcxproj -> C:\Users\Gregory Venezia\Downloads\Project3\Debug\Project3.exe
+     1>Done Building Project "C:\Users\Gregory Venezia\Downloads\Project3\Project3\Project3.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.98
+Time Elapsed 00:00:13.61

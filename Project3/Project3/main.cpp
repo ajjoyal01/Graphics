@@ -1,8 +1,22 @@
+//------------------------------------------------------------------------------------
+// Andrew Joyal and Greg Venezia
+// Project 3
+// 10/28/14
+// Description: This project creates a 3D scene with three textured cubes. The cubes can be resized, rotated
+//			and translated. 
+//			
+// Special Instructions:
+//
+//		Press 'l' to turn on lighting (ABOVE AND BEYOND!!)
+//		Press 'i' to translate back in the z direction
+//		Press 'o' to translate forwards in the z direction
+//------------------------------------------------------------------------------------
+
+
 #include <GL/glew.h>
 #include <GL/GL.h>
 #include <GL/freeglut.h>
 #include <iostream>
-#include <cstdlib>
 
 #include "vgl.h"
 #include "vec.h"
@@ -14,8 +28,8 @@
 #define map(value,inLow,inHigh,outLow,outHigh) ((value - inLow) * (outHigh - outLow) / (inHigh - inLow) + outLow)
 
 // window width and height
-#define WIN_WIDTH 600
-#define WIN_HEIGHT 600
+#define WIN_WIDTH 900
+#define WIN_HEIGHT 900
 
 using std::cerr;
 using std::endl;
@@ -47,7 +61,7 @@ int main(int argc,char* argv[])
 	glutInitWindowPosition(600, 0);
 	glutInitContextVersion(3, 3);
 	glutInitContextProfile(GLUT_CORE_PROFILE);
-	glutCreateWindow(argv[0]);
+	glutCreateWindow("Project 3");
 
 	glewExperimental = GL_TRUE;
 
